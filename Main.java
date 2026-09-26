@@ -15,6 +15,7 @@ public class Main {
 
             switch (opcao) {
                 case 1:
+                    cadastrar();
                     break;
                 case 2:
                     estoque.listarProdutos();
