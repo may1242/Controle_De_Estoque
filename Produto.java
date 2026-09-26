@@ -13,8 +13,15 @@ public class Produto {
         this.quantidadeEstoque = quantidadeEstoque;
     }
 
-    public void adicionar(int quantidade){
-        quantidadeEstoque += quantidade;
+    public void cadastrar(){
+       System.out.println("Insira o ID do produto: ");
+       this.id = scanner.nextInt();
+       System.out.println("Insira o nome do produto: ");
+       this.nome= scanner.nextLine();
+       System.out.println("Insira o preço do produto: ");
+       this.preco = scanner.nextInt();
+       System.out.println("Insira a quantidade em estoque do produto: ");
+       this.quantidadeEstoquee = scanner.nextInt();
     }
 
     public void remover(int quantidade){
