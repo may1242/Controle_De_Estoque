@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
+    static int id;
+    static String nome;
+    static double preco;
+    static int quantidadeEstoque;
 
     public static Estoque estoque = new Estoque();
 
@@ -64,5 +68,16 @@ public class Main {
         int id = scanner.nextInt();
         System.out.println("Informe a quantidade");
         return id;
+    }
+    public static void cadastrar(){
+        System.out.print("Insira o ID do produto: ");
+        Scanner scanner = new Scanner(System.in);
+        id = scanner.nextInt();
+        System.out.print("Insira o nome do produto: ");
+        nome = scanner.nextLine();
+        System.out.print("Insira o preço do produto: ");
+        preco = scanner.nextDouble();
+        System.out.print("Insira a quantidade em estoque do produto: ");
+        quantidadeEstoque = scanner.nextInt();
     }
 }
